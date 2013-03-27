@@ -29,12 +29,25 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 <resources>
   <string name="app_name">Kryptomate</string>
-  <string name="welcome">Welcome to Kryptomate.</string>
+  <string name="welcome">Kryptomate</string>
+  <string name="about">About</string>
   <string name="encrypt">Encrypt</string>
   <string name="decrypt">Decrypt</string>
   <string name="input">Text you want to en-/decrypt</string>
   <string name="output">The en-/decrypted text will appear here</string>
-  <string name="hint"> Enter the text, adjust the depth and choose the encryption method and mode. Kryptomate will only change alphabetical letters (A-Z, a-z).</string>
+  <string name="hint">Enter the text, adjust the depth or enter the key and choose the encryption method and mode. Kryptomate will only change alphabetical letters (A-Z, a-z).</string>
+  <string name="about_title">About &amp; License</string>
+  <string name="about_message">This app was created more for fun and I know it has limited use, nevertheless I found it surprisingly useful more than once.\n\n
+Feedback, especially bug reports and feature requests are very welcome.\n\n
+The whole source code of this program is available in my git repository at https://bitbucket.org/sjm/kryptomate . Feel free to fork it, change it and file pull requests :)\n\n\n
+The following BSD 3-clause license applies to this project:\n\n
+Copyright (c) 2013, Sebastian J. Mielke\n
+All rights reserved.\n\n
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:\n\n
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. The names of its contributors may not be used to endorse or promote products derived from this software without specific prior written permission.\n\n
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+	</string>
   <string name="key">Enter the encryption key here</string>
   <string name="caesar">Caesar</string>
   <string name="vigenere">Vigenère</string>

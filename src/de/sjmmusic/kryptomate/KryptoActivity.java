@@ -28,6 +28,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 package de.sjmmusic.kryptomate;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.InputFilter;
@@ -35,6 +36,7 @@ import android.text.InputType;
 import android.text.Spanned;
 import android.text.TextWatcher;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.*;
 
 public class KryptoActivity extends Activity implements InputFilter, TextWatcher {
@@ -82,6 +84,22 @@ public class KryptoActivity extends Activity implements InputFilter, TextWatcher
 				refreshResult();
 			}
 		});
+
+		OnClickListener aboutClick = new OnClickListener(){
+			@Override
+			public void onClick(View v) {
+				AlertDialog dialog = new AlertDialog.Builder(KryptoActivity.this)
+					.setTitle(getString("about_title"))
+					.setPositiveButton("OK", null)
+					.setCancelable(true)
+					.setMessage(getString("about_message"))
+					.show();
+				((TextView) dialog.findViewById(android.R.id.message)).setTextSize(14);
+			}
+		};
+
+		((TextView) findViewById(R.id.lbWelcome)).setOnClickListener(aboutClick);
+		((TextView) findViewById(R.id.lbAbout)).setOnClickListener(aboutClick);
 
 		edInput.addTextChangedListener(this);
 		edKey.addTextChangedListener(this);
@@ -133,7 +151,6 @@ public class KryptoActivity extends Activity implements InputFilter, TextWatcher
 		}
 	}
 	
-
 	public static String caesar(String input, int shift) {
 		String output = "";
 		int a;
@@ -181,4 +198,16 @@ public class KryptoActivity extends Activity implements InputFilter, TextWatcher
 		}
 		return output;
 	}
+
+	public String getString(String name)
+	{
+		try {
+			return getResources().getString(
+					getResources().getIdentifier(
+							name, "string", "de.sjmmusic.kryptomate"));
+		} catch (Exception e) {
+			return e.getMessage();
+		}
+	}
+
 }
