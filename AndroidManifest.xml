@@ -32,7 +32,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       android:versionCode="1"
       android:versionName="1.0">
     <uses-sdk android:minSdkVersion="7" />
-    <application android:label="@string/app_name" >
+    <application android:label="@string/app_name"
+                  android:icon="@drawable/icon">
         <activity android:name="KryptoActivity"
                   android:label="@string/app_name"
                   android:theme="@android:style/Theme.NoTitleBar">
